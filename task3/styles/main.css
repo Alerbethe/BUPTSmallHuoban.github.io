@@ -1,0 +1,77 @@
+/* 浮动实现 */
+.first-main {
+	padding: 20px;
+	margin: 20px;
+	background-color: #eee;
+	border: 1px solid #999;
+}
+/* 左侧logo区域 */
+.left-area {
+	width: 198px;
+	height: 120px;
+	padding: 20px;
+	border: 1px solid #999;
+}
+.left-area a, .right-area a {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url("../images/logo.jpg") left top;
+}
+.left-area a {
+	margin-right: 10px;
+	float: left;
+}
+/* 主题内容区域 */
+.mid-area {
+	border: 1px solid #999;
+	padding: 20px;
+	margin-left: 260px;
+	margin-right: 180px;
+}
+.first-main .mid-area h3 {
+	text-indent: 2em;
+	height: 22px;
+	line-height: 22px;
+}
+.first-main .mid-area h4, .first-main .mid-area p {
+	text-indent: 2em;
+	line-height: 22px;
+}
+.first-main .mid-area .p-word {
+	color: #FC0;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* 右侧logo区域 */
+.right-area {
+	width: 118px;
+	padding: 20px;
+	border: 1px solid #999;
+}
+.right-area ul li {
+	width: 80px;
+	height: 80px;
+	margin: 20px auto;
+}
+
+/* 定位实现 */
+.second-main {
+	margin: 20px;
+	position: relative;
+	background-color: #eee;
+	border: 1px solid #999;
+	padding: 20px;
+	height: 500px;
+}
+.second-main .mid-area {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+}
+.second-main .right-area {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
