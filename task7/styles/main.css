@@ -1,0 +1,629 @@
+/* 公用样式 */
+.commonWidth {
+	width: 1280px;
+}
+
+/* 顶部 */
+.header {
+	height: 57px;
+	line-height: 57px;
+	margin:auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	background-color: #FFF;
+}
+/* 新世界 */
+.new-world {
+	width: 104px;
+	height: 57px;
+	padding-left: 59px;
+}
+.new-world a {
+	background: url("../images/icon/new_world.png") left center no-repeat;
+	padding-left: 40px;
+	font-size: 21px;
+	font-weight: bold;
+	color: #000;
+}
+/* 右侧导航 */
+.header-list ul li {
+	float: left;
+	height: 52px;
+	line-height: 52px;
+}
+.header-list ul li a {
+	color: #b5b7bb;
+	display: inline-block;
+	width: 57px;
+	margin-right: 47px;
+	text-align: center;
+}
+.header-list .active {
+	color: #e74f4d;
+	border-bottom: 5px solid #e74f4d;
+}
+.header-list ul li:not(:last-child) a:hover {
+	color: #e74f4d;
+	border-bottom: 5px solid #e74f4d;
+}
+.header-list .header-login {
+	background: url("../images/icon/login.png") left center no-repeat;
+	padding-left: 5px;
+	color: #e74f4d;
+}
+/* 宣传区 */
+.main {
+	margin: 0 auto;
+	margin-top: 57px;
+}
+.propaganda {
+	background: url("../images/bg/propaganda_bg.png") left top no-repeat;
+	height: 690px;
+}
+.propaganda-title {
+	padding-top: 280px;
+	padding-left: 116px;
+	font-size: 60px;
+	font-weight: ;
+	color: #FFF;
+}
+.propaganda-text {
+	padding-left: 120px;
+}
+.propaganda-word p {
+	font-size: 21px;
+	line-height: 16px;
+	color: #FFF;
+	padding-bottom: 12px;
+}
+.propaganda-btn a {
+	background: url("../images/bg/propaganda_text_bg.png") left top no-repeat;
+	display: inline-block;
+	width: 331px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;	
+	font-size: 30px;
+	color: #FFF;
+}
+.propaganda-content {
+	height: 250px;
+}
+.propaganda-content li {
+	display: inline-block;
+	width: 23%;
+	height: 250px;
+	padding-left: 20px;
+	text-align: center;
+	float: left;
+}
+.propaganda-content-title {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	background: url("../images/icon/propaganda_content_item_bg.png");
+	background-repeat: no-repeat;
+}
+.title-1 {
+	background-position: -218px 4px;
+}
+.title-2 {
+	background-position: -142px 4px;
+}
+.title-3 {
+	background-position: -71px 4px;
+}
+.title-4 {
+	background-position: 4px 4px;
+}
+.propaganda-content-text {
+	height: 52px;
+	padding-left: 65px;
+}
+.propaganda-content-text p {
+	text-align: center;
+	display: inline-block;
+	width: 160px;
+	float: left;
+	line-height: 18px;
+	color: #767777;
+	margin-right: 65px;
+}
+.propaganda-content-line {
+	display: inline-block;
+	width: 2px;
+	height: 52px;
+	background: url("../images/bg/propaganda_content_bg.png") left top no-repeat;
+}
+/* 关于新世界 */
+.about-newWorld {
+	height: 360px;
+	background-color: #ededec;
+	text-align: center;
+}
+.about-newWorld span {
+	display: inline-block;
+	width: 92px;
+	height: 92px;
+	margin-top: 90px;
+	margin-bottom: 40px;
+	background: url("../images/icon/about_newWorld.png") left top no-repeat;
+}
+.about-newWorld p {
+	font-size: 54px;
+	color: #a1a1a1;
+	line-height: 56px;
+}
+/* 查找新世界 */
+.find-newWorld {
+	text-align: center;
+	background: url("../images/bg/find_neworld_bg.png") left top no-repeat;
+	height: 338px;
+}
+.find-newWorld h3 {
+	padding-top: 40px;
+	font-size: 21px;
+	color: #FFF;
+	line-height: 42px;
+	font-weight: normal;
+}
+.find-newWorld span, .new-era-text span {
+	display: inline-block;
+	width: 31px;
+	height: 3px;
+	background: url("../images/bg/white_span.png") left top no-repeat;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.find-newWorld .find-newWorld-text {
+	font-size: 12px;
+	line-height: 32px;
+	color: #FFF;
+}
+.find-newWorld-list li {
+	display: inline-block;
+	width: 236px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #FFF;
+	margin-right: 28px;
+	padding: ;
+}
+.find-newWorld-liText {
+	float: left;
+	font-size: 12px;
+	color: #a8aaaa;
+	padding-left: 13px;
+}
+.find-newWorld-liCon {
+	float: right;
+	width: 19px;
+	height: 20px;
+	vertical-align: middle;
+	background: url("../images/icon/find_newWorld_arrow.png") center center no-repeat #be4e48;
+	margin-right: 9px;
+	margin-top: 8px;
+}
+.find-newWorld-list .province {
+	position: relative;
+	border: 1px solid #be4e48;
+	border-bottom: none;
+	width: 234px;
+}
+.find-newWorld .find-newWorld-selectList {
+	width: 234px;
+	margin-left: -1px;
+	position: absolute;
+	top: 36px;
+	border: 1px solid #be4e48;
+	border-top: none;
+	text-align: left;
+}
+.find-newWorld-selectList li {
+	text-indent: 40px;
+	color: #787878;
+	background-color: #e3e2e4;
+	width: 234px;
+}
+.find-newWorld-selectList .find-newWorld-selected {
+	background: url("../images/icon/find_neworld_select.png") 15px 15px no-repeat #be4e48;
+	color: #FFF;
+}
+/* 活动介绍区 */
+.activity {
+	height: 605px;
+	background-color: #f8f8f7;
+}
+.activity-content {
+	width: 980px;
+	height: 400px;
+	padding: 100px 150px 105px;
+}
+.activity-list li {
+	display: inline-block;
+	width: 230px;
+	height: 400px;
+	text-align: center;
+	padding: 5px;
+}
+.activity-list li span {
+	display: inline-block;
+	width: 220px;
+	height: 330px;
+	background: url("../images/bg/activity_bg.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-color: #FFF;
+}
+.activity-list .activity-img1 {
+	background-position: 10px 10px;
+}
+.activity-list .activity-img2 {
+	background-position: -245px -43px;
+}
+.activity-list .activity-img3 {
+	background-position: -502px 10px;
+}
+.activity-list .activity-img4 {
+	background-position: -758px 10px;
+}
+.activity-list li h5 {
+	color: #959595;
+	line-height: 27px;
+}
+.activity-list li a {
+	color: #bdbdbd;
+	font-size: 12px;;
+	line-height: 27px;
+} 
+.activity-list li a:hover {
+	color: #FC0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* 新世界 */
+.new-world-2 {
+	height: 567px;
+}
+.new-world-2-left {
+	width: 850px;
+	height: 567px;
+	background: url("../images/bg/new_world_bg.png") left top no-repeat;
+	float: left;
+	position: relative;
+	text-align: center;
+	color: #FFF;
+}
+.new-world-2-left-t1 {
+	font-size: 50px;
+	line-height: 76px;
+	padding-top: 132px;
+}
+.new-world-2-left-t2 {
+	font-size: 158px;
+	line-height: 120px;
+}
+.new-world-2-left-t3 {
+	font-size: 22px;
+	line-height: 43px;
+	padding-top: 28px;
+}
+.new-world-2-left-t4 {
+	font-size: 22px;
+	line-height: 43px;
+}
+.new-world-2-left-arrow {
+	display: block;
+	position: absolute;
+	width: 26px;
+	height: 31px;
+	background: url("../images/icon/new_world_arrow.png") left top no-repeat;
+	right: 0;
+	bottom: 280px;
+}
+.new-world-2-right {
+	width: 430px;
+	height: 567px;
+	text-align: center;
+	float: left;
+}
+.new-world-2-right-title {
+	font-size: 19px;
+	line-height: 19px;
+	padding-top: 165px;
+	padding-bottom: 30px;
+}
+.new-world-2-right-title span {
+	color: #e74f4d;
+}
+.new-world-2-right-text {
+	display: inline-block;
+	width: 290px;
+	color: #b0b0b0;
+	font-size: 12px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+.new-world-2-right-more {
+	margin: 0 auto;
+	display: block;
+	color: #e25c60;
+	width: 105px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+	border: 1px solid #e25c60;
+	margin-bottom: 30px;
+}
+.new-world-2-right-btn {
+	margin: 0 auto;
+	color: #e25c60;
+	width: 105px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+.new-world-2-right-btn a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #CCC;
+	border-radius: 12px;
+	margin-right: 8px;
+}
+.new-world-2-right-btn .new-world-2-right-btn-1 {
+	background-color: #929293;
+}
+/* 新时代 */
+.new-era {
+	height: 520px;
+}
+.new-era-left, .new-era-mid, .new-era-right {
+	width: 33.33%;
+	float: left;
+	height: 520px;
+}
+.new-era-text {
+	width: 170px;
+	margin: 170px auto;
+	text-align: center;
+}
+.new-era-text p {
+	font-family: "黑体";
+	font-size: 21px;
+	line-height: 31px;
+}
+.new-era-text a {
+	display: inline-block;
+	margin-top: 10px;
+	width: 168px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 21px;
+}
+.new-era-left {
+	background-color: #e74f4d;
+	color: #FFF;
+}
+.new-era-left a {
+	border: 1px solid #FFF;
+	color: #FFf;
+}
+.new-era-left a:hover {
+	background-color: #FFF;
+	color: #e74f4d;
+	border: 1px solid #e74f4d;
+}
+.new-era-mid .grey-p {
+	display: inline-block;
+	width: 31px;
+	height: 3px;
+	background: url("../images/bg/grey_span.png") left top no-repeat;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.new-era-mid a {
+	border: 1px solid #e74f4d;
+	color: #e74f4d;
+}
+.new-era-mid a:hover {
+	background-color: #e74f4d;
+	color: #FFF;
+	border: 1px solid #FFF;
+}
+.new-era-right {
+	background: url("../images/bg/new_era_right_bg.png") left top no-repeat;
+	position: relative;
+}
+.new-era-right-arrow {
+	position: absolute;
+	display: inline-block;
+	width: 26px;
+	height: 31px;
+	background: url("../images/icon/new_era_right_arrow.png") left top no-repeat;
+	left: 0;
+	bottom: 230px;
+}
+/* 志愿者 */
+.volunteer {
+	height: 750px;
+}
+.volunteer-title {
+	margin: 120px auto 90px;
+	height: 140px;
+	width: 460px;
+	text-align: center;
+	padding: 10px;
+}
+.volunteer-title h2 {
+	font-size: 21px;
+	line-height: 31px;
+}
+.volunteer-title span {
+	display: inline-block;
+	width: 31px;
+	height: 3px;
+	background: url("../images/bg/red_span.png") left top no-repeat;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.volunteer-title p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #aaa;
+}
+.volunteer-content {
+	height: 300px;
+	width: 1100px;
+	margin: 25px auto 165px;
+}
+.volunteer-content-left {
+	width: 310px;
+	height: 300px;
+	padding: 0 40px;
+	margin-right: 60px;
+}
+.volunteer-content-left-text {
+	margin-bottom: 10px;
+}
+.volunteer-content-left-text h3 {
+	color: #74706f;
+}
+.volunteer-content-left-text p {
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 21px;
+	color: #a5a3a2;
+	margin: 20px auto 10px;
+}
+.volunteer-content-left-text a {
+	margin-top: 5px;
+	float: right;
+	color: #a5a3a2;
+	font-size: 12px;
+	padding-left: 15px;
+	line-height: 20px;
+	background: url("../images/icon/volunteer_arrow.png") left 9px no-repeat;
+}
+.volunteer-content-left-text a:hover {
+	color: #FC0;
+	font-size: 14px;
+}
+.volunteer-content-right {
+	height: 300px;
+	width: 650px;
+}
+.volunteer-content-right input[type="text"] {
+	width: 300px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 12px;
+	font-family: "宋体";
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	float: left;
+	background-color: #ededee;
+}
+.volunteer-content-right textarea {
+	width: 623px;
+	height: 120px;
+	background-color: #ededee;
+	padding-left: 10px;
+	margin-bottom: 16px;
+}
+.volunteer-content-right input[type="button"] {
+	width: 635px;
+	height: 42px;
+	text-align: center;
+	font-family: "黑体";
+}
+/* 底部版权区 */
+.footer {
+	height: 415px;
+	margin: 0 auto;
+}
+.footer-top {
+	height: 360px;
+	background-color: #32363e;
+}
+.footer-top-content {
+	width: 530px;
+	padding: 90px 10px 70px;
+	color: #FFF;
+	text-align: center;
+	margin: 0 auto;
+}
+.footer-text {
+	margin-bottom: 30px;
+}
+.footer-text h2 {
+	font-size: 21px;
+	line-height: 48px;
+}
+.footer-text p {
+	font-size: 12px;
+	line-height: 18px;
+}
+.footer-search {
+	margin-bottom: 35px;
+}
+.footer-search input[type="text"] {
+	width: 430px;
+	height: 42px;
+	line-height: 42px;
+	color: #aaa;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.footer-search input[type="button"] {
+	width: 90px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 15px;
+	color: #FFF;
+	background-color: #6f7278;
+}
+.footer-icon a {
+	display: inline-block;
+	width: 31px;
+	height: 25px;
+	margin-right: 20px;
+	background: url("../images/icon/propaganda_content_item_bg.png");
+	background-repeat: no-repeat;
+}
+.footer-icon a.footer-icon-item1 {
+	background-position: -7px -65px;
+}
+.footer-icon a.footer-icon-item2 {
+	background-position: -81px -65px;
+}
+.footer-icon a.footer-icon-item3 {
+	background-position: -152px -65px;
+}
+.footer-icon a.footer-icon-item4 {
+	background-position: -226px -65px;
+}
+.footer-bottom {
+	background-color: #2f3039;
+	color: #FFF;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 28px;
+	height: 95px;
+}
+.footer-bottom p {
+	padding-left: 100px;
+	padding-top: 30px;
+}
+.footer-bottom a {
+	padding-top: 30px;
+	color: #FFF;
+	padding-right: 40px;
+}
