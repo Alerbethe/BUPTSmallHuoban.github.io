@@ -1,0 +1,262 @@
+body {
+	width: 100%;
+}
+/* 顶栏 */
+.header {
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	background-color: #2189bf;
+	position: relative;
+}
+.logo {
+	padding-top: 10px;
+	padding-left: 50px;
+	height: 46px;
+}
+.logo a {
+	display: inline-block;
+	height: 36px;
+	width: 36px;
+}
+.header-right {
+	width: 400px;
+	height: 56px;
+	line-height: 56px;
+	margin-right: 90px;
+}
+.header-search {
+	width: 320px;
+	height: 28px;
+	line-height: 28px;
+	margin-top: 12px;
+}
+.header-search .semicircleLeft {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 28px 0 0 28px;
+	background-color: #FFF;
+}
+.header-search input[type="text"] {
+	width: 120px;
+	height: 28px;
+	line-height: 28px;
+	background: url("../images/icon/search.png") left center no-repeat;
+	background-color: #FFF;
+	transition: width .5s ease-in .1s;
+	padding-left: 17px;
+}
+.header-search .semicircleRight {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 0 28px 28px 0;
+	background-color: #FFF;
+}
+.header-search input[type="text"]:focus {
+	width: 230px;
+}
+.header-login a {
+	color: #FFF;
+	background: url("../images/icon/login.png") left center no-repeat;
+	padding-left: 20px;
+}
+.header-login a:hover {
+	color: #FF3030;
+}
+/* 主题内容区域 */
+.main {
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+.sideBar {
+	width: 260px;
+	height: 1213px;
+	position: relative;
+	background-color: #2a2e3d;
+}
+/* 侧边栏上部 */
+.user-portrait {
+	height: 148px;
+}
+.profile-photo {
+	width: 215px;
+	height: 56px;
+	line-height: 56px;
+	padding-top: 20px;
+	margin-left: 45px;
+}
+.portrait-border {
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	border-radius: 56px;
+	border: 1px solid #b9babe;
+	margin-right: 20px;
+}
+.portrait-img {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	border-radius: 46px;
+	background-color: #b9babe;
+	transform: translateX(5px) translateY(5px);
+}
+.profile-photo h3 {
+	font-size: 16px;
+	font-family: "黑体";
+	color: #FFF;
+	float: left;
+}
+.profile-photo h3:hover {
+	color: #FF4500;
+	font-size: 20px;
+}
+.user-data {
+	margin: 21px 86px 21px 63px;
+	width: 110px;
+	height: 40px;
+	padding-top: 10px;
+	color: #6e8095;
+}
+.user-data li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 33%;
+	text-align: center;
+}
+.user-data li:hover {
+	color: #FC0;
+	cursor: pointer;
+}
+.user-data .user-data-num {
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "黑体";
+}
+.user-data .user-data-text {
+	font-size: 12px;
+	line-height: 13px;
+	font-family: "宋体";
+}
+.user-data-bg {
+	background: url("../images/bg/user-data-bg.png") center center no-repeat;
+}
+/* 侧边栏中部 */
+.user-baobiao {
+	height: 191px;
+	background-color: #383d4e;
+}
+.user-text-w {
+	color: #FFF;
+	font-size: 12px;
+	font-family: "黑体";
+}
+.user-text-h {
+	color: #6e8095;
+	font-size: 12px;
+	font-family: "黑体";
+}
+.user-baobiao-list {
+	padding-left: 45px;
+} 
+.user-baobiao-list li {
+	height: 30px;
+	line-height: 48px;
+}
+.user-baobiao-list .file-two-li {
+	height: 90px;
+}
+.personal-statements {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 12px;
+	background: url('../images/icon/personal-statements.png') center center no-repeat;
+	bottom: -1px;
+}
+.user-baobiao-content {
+	margin-top: -24px;
+	margin-left: 23px;
+}
+.file-arrow-right {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	background: url('../images/icon/file-arrow-right.png') center center no-repeat;
+}
+.user-baobiao-file-h {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+	background: url('../images/icon/user-baobiao-file-h.png') center center no-repeat;
+}
+.file-arrow-down {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	background: url('../images/icon/file-arrow-down.png') center center no-repeat;
+}
+.file-two-list {
+	margin-top: -18px;
+	padding-left: 33px;
+}
+.file-doc-h {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 4px;
+	background: url('../images/icon/file-doc-h.png') center center no-repeat;
+}
+.file-doc-w {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 4px;
+	background: url('../images/icon/file-doc-w.png') center center no-repeat;
+}
+/* 侧边栏底部 */
+.user-project-list {
+	margin-left: 45px;
+}
+.user-project-list li {
+	font-size: 12px;
+	line-height: 48px;
+	color: #FFF;
+	font-family: "黑体";
+}
+.personal-collection {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 14px;
+	background: url('../images/icon/personal-collection.png') center center no-repeat;
+}
+.personal-share {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 14px;
+	background: url('../images/icon/personal-share.png') center center no-repeat;
+}
+.personal-account {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 14px;
+	background: url('../images/icon/personal-account.png') center center no-repeat;
+}
+/* 右侧内容区域 */
+.content {
+	width: 1020px;
+	height: 100%;
+	position: absolute;
+	left: 260px;
+	top: 56px;
+}
