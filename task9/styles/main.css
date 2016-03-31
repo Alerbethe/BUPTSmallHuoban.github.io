@@ -273,6 +273,7 @@ body {
 	background-color: #FFF;
 }
 .content-title h3 {
+	padding-top: 4px;
 	font-size: 13px;
 	line-height: 23px;
 	color: #b7b7b7;
@@ -662,7 +663,6 @@ body {
 }
 .tab-list li:hover {
 	border-bottom: 1px solid #FFF;
-	background-color: #FC0;
 }
 .tab-list li:hover .subItem {
 	display: block;
@@ -905,6 +905,7 @@ body {
 	width: 44px;
 	height: 41px;
 	text-align: center;
+	box-sizing: border-box;
 }
 .calendar-main .calendar-tableBody tbody td p {
 	font-size: 12px;
