@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+input {
+	outline: none;
+}
+.main {
+	margin-top: 100px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.text-input {
+	flex: 1;
+	margin-bottom: 20px;
+}
+.text-area {
+	flex: 1;
+	margin-bottom: 20px;
+}
+.text-area input[type="text"], .text-input input[type="text"] {
+	width: 500px;
+}
+.btn-area {
+	flex: 1;
+}
+.btn-area input[type="button"] {
+	margin-right: 10px;
+	padding: 5px 10px;
+	color: #E88024;
+	background-color: #FFF;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px grey;
+	cursor: pointer;
+}
+.num-area {
+	flex: 2;
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	padding: 10px 0 10px 10px;
+}
+.num-area a {
+	display: inline-flex;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	background-color: #FF8247;
+	color: #FFF;
+	border: 2px solid transparent;
+	cursor: pointer;
+}
+.num-area a:hover {
+	border: 2px solid #CD6839;
+}
