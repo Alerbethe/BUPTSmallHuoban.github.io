@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>星空</title>
+</head>
+<body>
+	<canvas id="canvas" style="display:block;border:1px solid #aaa;margin:0 auto">
+		浏览器不支持canvas，请更换浏览器后再试
+	</canvas>
+
+	<script type="text/javascript">
+	const BIG_RADIUS = 300;
+	const SMALL_RADIUS =150;
+	const ROT = 0; 
+	window.onload = function () {
+		var canvas = document.getElementById("canvas");
+		var context = canvas.getContext("2d");
+
+		canvas.width = 1200;
+		canvas.height = 800;
+
+		// 绘制黑色背景
+		var backColor = context.createLinearGradient(0,0,0,canvas.height);
+		backColor.addColorStop(0,"#000");
+		backColor.addColorStop(1,"#035");
+		context.fillStyle = backColor;
+		context.fillRect(0,0,canvas.width,canvas.height);
+
+		// 绘制五角星
+		for (var i = 0; i < 200; i++) {
+			var r = Math.random()*5 +5;
+			var x = Math.random()*canvas.width;
+			// 设置系数，为图像留出天地
+			var y = Math.random()*canvas.height*0.65;
+			var a = Math.random()*360;
+
+			drawStar(context,r/2,r,x,y,a);
+		};
+
+		// 绘制月亮
+		fillMoon(context,2,900,200,100,30);
+
+		// 绘制一片草地
+		drawLand(context,0,600,540,400,660,800,1200,600,1200,800);
+
+		// 绘制文字
+		var textStyle = "bold 30px sans-serif";
+		var text1 = "星星点灯，照亮我的家门...";
+		var text2 = "让迷失的孩子找到来时的路";
+		drawText(context,text1,100,600,textStyle);
+		drawText(context,text2,100,700,textStyle);
+
+	}
+	function drawStar (cont,r,R,x,y,rot) {
+		cont.beginPath();
+		for (var i = 0; i < 5; i++) {
+			cont.lineTo(Math.cos((18+i*72-rot)/180*Math.PI)*R + x,
+						-Math.sin((18+i*72-rot)/180*Math.PI)*R + y);
+			cont.lineTo(Math.cos((54+i*72-rot)/180*Math.PI)*r + x,
+						-Math.sin((54+i*72-rot)/180*Math.PI)*r + y);
+
+		};
+		cont.closePath();
+
+		cont.fillStyle = "#fb3";
+		cont.strokeStyle = "#fd5";
+		cont.lineWidth = 3;
+		cont.lineJoin = "round";
+
+		cont.fill();
+		cont.stroke();
+	}
+	// 绘制月亮
+	function fillMoon (cont,d,x,y,R,rot,fillColor) {
+		// d为控制点的横坐标
+		cont.save();
+		// 变换坐标系，使得计算更简便
+		cont.translate(x,y);
+		cont.scale(R,R);
+		cont.rotate(rot*Math.PI/180);
+		pathMoon(cont,d);
+		cont.fillStyle = fillColor || "#FC0";
+		cont.fill();
+		cont.restore();
+	}	
+	// 绘制月亮的路径
+	function pathMoon (cont,d) {
+		cont.beginPath();
+		cont.arc(0,0,1,Math.PI/2,Math.PI*3/2,true);
+		cont.moveTo(0,-1);
+		cont.arcTo(d,0,0,1,dis(0,-1,d,0)/d)
+		cont.closePath();
+	}
+	// 计算两点之间的距离
+	function dis (x1,y1,x2,y2) {
+		return Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+	}
+
+	// 绘制草地
+	function drawLand (cont,x0,y0,x1,y1,x2,y2,xE,yE,cWidth,cHeight) {
+		cont.save();
+		cont.beginPath();
+		cont.moveTo(x0,y0);
+		cont.bezierCurveTo(x1,y1,x2,y2,xE,yE);
+		cont.lineTo(cWidth,cHeight);
+		cont.lineTo(0,cHeight);
+		cont.closePath();
+
+		var landStyle = cont.createLinearGradient(0,cHeight,0,0);
+		landStyle.addColorStop(0.0,"#030");
+		landStyle.addColorStop(1.0,"#580");
+		cont.fillStyle = landStyle;
+		cont.fill();
+		cont.restore();
+	}
+
+	// 绘制文字
+	function drawText (cont,text,x,y,textStyle,fillColor) {
+		cont.save();
+		cont.fillStyle = fillColor || "#FFF";
+		cont.font = textStyle;
+		cont.shadowColor = "gray";
+		cont.shadowOffsetX = 10;
+		cont.shadowOffsetY = 10;
+		cont.shadowBlur = 5;
+		cont.fillText(text,x,y);
+		cont.restore();
+	}
+	</script>
+</body>
+</html>
